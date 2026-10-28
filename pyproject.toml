@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simcom-sms-gateway-client"
+version = "0.1.0"
+description = "Python client for a personal Cloudflare Worker + SIMCom SMS gateway"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "SMS Gateway Contributors"}]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[tool.setuptools]
+packages = ["simcom_sms_gateway"]
+py-modules = ["sms_to_phone"]
